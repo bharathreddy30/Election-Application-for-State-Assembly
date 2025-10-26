@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Election Results 2024</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Election Results 2024</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="results.html" class="active">Results</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <section class="results">
+    <h2>View Results by State</h2>
+    <select id="stateSelect">
+      <option value="">--Select State--</option>
+    </select>
+
+    <select id="constituencySelect">
+      <option value="">--Select Constituency--</option>
+    </select>
+
+    <h3 id="constName">Constituency: —</h3>
+    <ul id="candidateList"></ul>
+
+    <canvas id="resultsChart" width="400" height="200"></canvas>
+  </section>
+
+  <footer>
+    <p>© 2024 Election Commission | All Rights Reserved</p>
+  </footer>
+
+  <script src="js/results.js"></script>
+</body>
+</html>
